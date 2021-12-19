@@ -1,0 +1,62 @@
+// UTILITIES.
+
+// Container.
+.container {
+  max-width: $website-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+// Buttons styling (extend shared style for all buttons).
+%btn-shared {
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+}
+
+.btn {
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-color;
+    color: white;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-color;
+    color: black;
+  }
+
+  &-main {
+    @extend %btn-shared;
+    background-color: $main-color;
+    color: black;
+  }
+}
+
+// Dividing line.
+.dividing-line {
+  background: $main-color;
+  display: block;
+  height: 0.2rem;
+  margin: 0 auto 1rem auto;
+  width: 5rem;
+}
+
+// Font Awesome classes.
+.far,
+.fas {
+  padding-bottom: 0.5rem;
+}
+
+// Text align.
+.text-centered {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
