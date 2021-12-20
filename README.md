@@ -7,4 +7,4 @@ Simple portfolio project based on HTML5 + CSS3, builded with SASS preprocessor.
     Database:   none
 ___________________________________________________________________
 
-Just open "index.html" in project folder with help of your favorite browser.
+Just open file "index.html" in project folder "dist" with help of your favorite browser.
