@@ -34,7 +34,7 @@
 .fas {
   padding-bottom: 0.5rem; }
 
-.text-centered {
+.text-center {
   text-align: center; }
 
 .text-left {
@@ -104,7 +104,7 @@ ul {
       border-radius: 50%;
       filter: grayscale(1);
       height: 30rem;
-      transition-duration: 10s;
+      transition-duration: 5s;
       transition-property: filter;
       width: 30rem; }
     #header-home .header-content #photo:hover {
@@ -119,6 +119,42 @@ ul {
     #header-home .header-content a {
       border-radius: 0.5rem;
       margin: 4rem; }
+
+#header-inner {
+  background: url("../img/bg_image_6.jpg") no-repeat center right/cover;
+  height: 9rem;
+  color: white; }
+
+#about-1 .section-title {
+  padding-top: 3rem;
+  padding-bottom: 1rem; }
+
+#about-1 p {
+  font-size: 2rem;
+  padding-bottom: 3rem; }
+
+#about-1 .about-info {
+  display: grid;
+  gap: 5rem;
+  grid-template-areas: "intro-image intro intro" "award-1 award-2 award-3"; }
+
+#about-1 .intro-image {
+  grid-area: intro-image; }
+
+#about-1 .intro {
+  grid-area: intro; }
+
+#about-1 .award-1 {
+  grid-area: award-1; }
+
+#about-1 .award-2 {
+  grid-area: award-2; }
+
+#about-1 .award-3 {
+  grid-area: award-3; }
+
+#about-1 h3, #about-1 h4 {
+  padding-bottom: 2rem; }
 
 #home-1 .section-title {
   padding-top: 3rem;
@@ -207,7 +243,7 @@ ul {
     text-align: center; }
     #footer-main .footer-content .social-media a .fab {
       color: white;
-      margin: 1.5rem 2rem 2rem 0; }
+      margin: 1.5rem 2rem 1.5rem 0; }
     #footer-main .footer-content .social-media a .fab:hover {
       color: gold; }
 

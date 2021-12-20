@@ -83,6 +83,7 @@ ul {
 
 // Header.
 #header {
+  // Header Home.
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
@@ -96,7 +97,7 @@ ul {
         border-radius: 50%;
         filter: grayscale(1);
         height: 30rem;
-        transition-duration: 10s;
+        transition-duration: 5s;
         transition-property: filter;
         width: 30rem;
       }
@@ -122,9 +123,65 @@ ul {
       }
     }
   }
+
+  // Header Inner.
+  &-inner {
+    background: $bg-image no-repeat center right / cover;
+    height: 9rem;
+    color: white;
+  }
 }
 
-// Home sections.
+// 'About' sections.
+#about {
+  // Section 1.
+  &-1 {
+    .section-title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .about-info {
+      display: grid;
+      gap: 5rem;
+      grid-template-areas:
+        "intro-image intro intro"
+        "award-1 award-2 award-3";
+    }
+
+    // GRID Area
+    .intro-image {
+      grid-area: intro-image;
+    }
+
+    .intro {
+      grid-area: intro;
+    }
+
+    .award-1 {
+      grid-area: award-1;
+    }
+
+    .award-2 {
+      grid-area: award-2;
+    }
+
+    .award-3 {
+      grid-area: award-3;
+    }
+
+    h3, h4 {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+// 'Home' sections.
 #home {
   // Section 1.
   &-1 {
@@ -259,7 +316,7 @@ ul {
 
     .social-media a .fab {
       color: white;
-      margin: 1.5rem 2rem 2rem 0;
+      margin: 1.5rem 2rem 1.5rem 0;
     }
 
     .social-media a .fab:hover {
