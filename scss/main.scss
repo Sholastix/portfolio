@@ -93,11 +93,11 @@ ul {
       padding-top: 7%;
 
       #photo {
-        // border: 0.1rem solid $dark-color;
+        border: 1.2rem ridge $light-color;
         border-radius: 50%;
         filter: grayscale(1);
         height: 30rem;
-        transition-duration: 5s;
+        transition-duration: 10s;
         transition-property: filter;
         width: 30rem;
       }
@@ -140,7 +140,7 @@ ul {
       padding-top: 3rem;
       padding-bottom: 1rem;
     }
-  
+
     p {
       font-size: 2rem;
       padding-bottom: 3rem;
@@ -152,31 +152,37 @@ ul {
       grid-template-areas:
         "intro-image intro intro"
         "award-1 award-2 award-3";
-    }
 
-    // GRID Area
-    .intro-image {
-      grid-area: intro-image;
-    }
+      // GRID Area
+      .intro-image {
+        grid-area: intro-image;
+      }
 
-    .intro {
-      grid-area: intro;
-    }
+      .intro {
+        grid-area: intro;
+        background-color: $medium-color;
 
-    .award-1 {
-      grid-area: award-1;
-    }
+        p {
+          padding: 0 3rem 1rem;
+        }
+      }
 
-    .award-2 {
-      grid-area: award-2;
-    }
+      .award-1 {
+        grid-area: award-1;
+      }
 
-    .award-3 {
-      grid-area: award-3;
-    }
+      .award-2 {
+        grid-area: award-2;
+      }
 
-    h3, h4 {
-      padding-bottom: 2rem;
+      .award-3 {
+        grid-area: award-3;
+      }
+
+      h3 {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+      }
     }
   }
 }

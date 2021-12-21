@@ -101,10 +101,11 @@ ul {
   #header-home .header-content {
     padding-top: 7%; }
     #header-home .header-content #photo {
+      border: 1.2rem ridge #dddddd;
       border-radius: 50%;
       filter: grayscale(1);
       height: 30rem;
-      transition-duration: 5s;
+      transition-duration: 10s;
       transition-property: filter;
       width: 30rem; }
     #header-home .header-content #photo:hover {
@@ -137,24 +138,22 @@ ul {
   display: grid;
   gap: 5rem;
   grid-template-areas: "intro-image intro intro" "award-1 award-2 award-3"; }
-
-#about-1 .intro-image {
-  grid-area: intro-image; }
-
-#about-1 .intro {
-  grid-area: intro; }
-
-#about-1 .award-1 {
-  grid-area: award-1; }
-
-#about-1 .award-2 {
-  grid-area: award-2; }
-
-#about-1 .award-3 {
-  grid-area: award-3; }
-
-#about-1 h3, #about-1 h4 {
-  padding-bottom: 2rem; }
+  #about-1 .about-info .intro-image {
+    grid-area: intro-image; }
+  #about-1 .about-info .intro {
+    grid-area: intro;
+    background-color: #bebebe; }
+    #about-1 .about-info .intro p {
+      padding: 0 3rem 1rem; }
+  #about-1 .about-info .award-1 {
+    grid-area: award-1; }
+  #about-1 .about-info .award-2 {
+    grid-area: award-2; }
+  #about-1 .about-info .award-3 {
+    grid-area: award-3; }
+  #about-1 .about-info h3 {
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
 
 #home-1 .section-title {
   padding-top: 3rem;
