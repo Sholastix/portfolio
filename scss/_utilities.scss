@@ -1,11 +1,18 @@
 // UTILITIES.
 
-// Container.
-.container {
-  max-width: $website-width;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
+// Background colors.
+.bg {
+  &-dark {
+    background-color: $dark-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+  }
+
+  &-medium {
+    background-color: $medium-color;
+  }
 }
 
 // Buttons styling (extend shared style for all buttons).
@@ -37,9 +44,12 @@
   }
 }
 
-// Backgrounds.
-.bg {
-  
+// Container.
+.container {
+  max-width: $website-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
 }
 
 // Dividing line.

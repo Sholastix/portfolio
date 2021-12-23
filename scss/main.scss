@@ -132,7 +132,7 @@ ul {
   }
 }
 
-// 'About' sections.
+// 'ABOUT' sections.
 #about {
   // Section 1.
   &-1 {
@@ -159,8 +159,8 @@ ul {
       }
 
       .intro {
+        border-radius: 1rem;
         grid-area: intro;
-        background-color: $medium-color;
 
         p {
           padding: 0 3rem 1rem;
@@ -185,9 +185,42 @@ ul {
       }
     }
   }
+
+  // Section 2.
+  &-2 {
+    border-radius: 1rem;
+    margin: 5rem 3rem;
+    // margin: 5rem 50rem;
+    padding-bottom: 2rem;
+
+    .progress {
+      background-color: $light-color;
+      border-radius: 0.5rem;
+      height: 3rem;
+      overflow: hidden;
+
+      div {
+        background-color: $main-color;
+        // font-size: 2rem;
+        // font-weight: bold;
+        height: 100%;
+        padding: 0.5rem 0;
+      }
+    }
+
+    .section-title {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    h4 {
+      text-align: left;
+      margin: 2rem 0 1rem 0;
+    }
+  }
 }
 
-// 'Home' sections.
+// 'HOME' sections.
 #home {
   // Section 1.
   &-1 {
@@ -213,6 +246,7 @@ ul {
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      margin: 0 3rem;
 
       li {
         &.stats-title {
