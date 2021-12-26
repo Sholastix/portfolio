@@ -189,12 +189,12 @@ ul {
   // Section 2.
   &-2 {
     border-radius: 1rem;
+    color: white;
     margin: 5rem 3rem;
-    // margin: 5rem 50rem;
     padding-bottom: 2rem;
 
     .progress {
-      background-color: $light-color;
+      background-color: white;
       border-radius: 0.5rem;
       height: 3rem;
       overflow: hidden;
@@ -216,6 +216,61 @@ ul {
     h4 {
       text-align: left;
       margin: 2rem 0 1rem 0;
+    }
+  }
+
+  // Section 3.
+  &-3 {
+    .about-logos {
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 20rem;
+        width: 20rem;
+        margin-bottom: 3rem;
+        padding: 2rem;
+      }
+    }
+  }
+
+  //Section 4.
+  &-4 {
+    .section-title {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .testimonials {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          height: 7rem;
+          margin-right: 1rem;
+          width: 7rem;
+        }
+      }
+
+      p {
+        // border: 0.1rem solid $medium-color;
+        border-radius: 1rem;
+        background-color: $medium-color;
+        margin: 2rem 0;
+        padding: 1rem;
+        text-align: left;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 3rem;
     }
   }
 }

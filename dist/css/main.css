@@ -166,10 +166,11 @@ ul {
 
 #about-2 {
   border-radius: 1rem;
+  color: white;
   margin: 5rem 3rem;
   padding-bottom: 2rem; }
   #about-2 .progress {
-    background-color: #dddddd;
+    background-color: white;
     border-radius: 0.5rem;
     height: 3rem;
     overflow: hidden; }
@@ -183,6 +184,42 @@ ul {
   #about-2 h4 {
     text-align: left;
     margin: 2rem 0 1rem 0; }
+
+#about-3 .about-logos {
+  display: flex;
+  justify-content: center; }
+  #about-3 .about-logos img {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+    padding: 2rem; }
+
+#about-4 .section-title {
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+
+#about-4 .testimonials {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr); }
+  #about-4 .testimonials ul {
+    display: flex;
+    align-items: center; }
+    #about-4 .testimonials ul img {
+      border-radius: 50%;
+      height: 7rem;
+      margin-right: 1rem;
+      width: 7rem; }
+  #about-4 .testimonials p {
+    border-radius: 1rem;
+    background-color: #bebebe;
+    margin: 2rem 0;
+    padding: 1rem;
+    text-align: left; }
+
+#about-4 p {
+  font-size: 2rem;
+  padding-bottom: 3rem; }
 
 #home-1 .section-title {
   padding-top: 3rem;
