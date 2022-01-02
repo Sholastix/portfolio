@@ -1,5 +1,6 @@
 // Importing partials.
 @import "config";
+@import "sample-grid";
 @import "utilities";
 
 // General styles.
@@ -396,6 +397,23 @@ ul {
       }
     }
   }
+}
+
+// "PROJECTS" sections.
+#projects {
+  // Section 1.
+  &-1 {
+    .section-title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  // All styling for samples gallery is in "_sample-grid.scss" partial.
 }
 
 // Footer.
