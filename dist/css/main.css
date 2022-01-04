@@ -1,7 +1,7 @@
 .samples {
   gap: 5rem;
   display: grid;
-  grid-template-columns: repeat(3, 50rem);
+  grid-template-columns: repeat(3, 35.3rem);
   justify-content: center;
   margin: 3rem 0 5rem 0; }
 
@@ -76,7 +76,7 @@
 .bg-medium {
   background-color: #bebebe; }
 
-.btn-dark, .btn-light, .btn-main {
+.btn-dark, .btn-light, .btn-main, .btn-medium {
   border: 1px solid black;
   cursor: pointer;
   display: inline-block;
@@ -93,6 +93,10 @@
 
 .btn-main {
   background-color: gold;
+  color: black; }
+
+.btn-medium {
+  background-color: #bebebe;
   color: black; }
 
 .container {
@@ -282,13 +286,52 @@ ul {
   #about-4 .testimonials p {
     border-radius: 1rem;
     background-color: #bebebe;
-    margin: 2rem 0;
+    margin: 2rem 0 5rem 0;
     padding: 1rem;
     text-align: left; }
 
 #about-4 p {
   font-size: 2rem;
   padding-bottom: 3rem; }
+
+#contacts-1 .section-title {
+  padding-top: 3rem;
+  padding-bottom: 1rem; }
+
+#contacts-1 .text-field {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #contacts-1 .text-field .text-input {
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50rem; }
+  #contacts-1 .text-field .message-input {
+    height: 23.5rem; }
+
+#contacts-1 button[type="submit"] {
+  border-radius: 0.5rem;
+  margin: 1rem 0 2rem 0; }
+  #contacts-1 button[type="submit"]:hover {
+    color: black; }
+
+#contacts-1 p {
+  font-size: 2rem;
+  padding-bottom: 3rem; }
+
+#contacts-2 {
+  border-bottom: 0.3rem solid gold;
+  margin: 1rem 0 0 0;
+  padding: 2rem 0; }
+  #contacts-2 .contacts-info {
+    align-items: center;
+    display: flex;
+    justify-content: space-around; }
+    #contacts-2 .contacts-info p {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 2rem; }
 
 #home-1 .section-title {
   padding-top: 3rem;

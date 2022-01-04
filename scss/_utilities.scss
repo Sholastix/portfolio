@@ -42,6 +42,12 @@
     background-color: $main-color;
     color: black;
   }
+
+  &-medium {
+    @extend %btn-shared;
+    background-color: $medium-color;
+    color: black;
+  }
 }
 
 // Container.

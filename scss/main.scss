@@ -154,7 +154,7 @@ ul {
         "intro-image intro intro"
         "award-1 award-2 award-3";
 
-      // GRID Area
+      // GRID Area.
       .intro-image {
         grid-area: intro-image;
       }
@@ -263,7 +263,7 @@ ul {
         // border: 0.1rem solid $medium-color;
         border-radius: 1rem;
         background-color: $medium-color;
-        margin: 2rem 0;
+        margin: 2rem 0 5rem 0;
         padding: 1rem;
         text-align: left;
       }
@@ -272,6 +272,67 @@ ul {
     p {
       font-size: 2rem;
       padding-bottom: 3rem;
+    }
+  }
+}
+
+// "CONTACTS" sections.
+#contacts {
+  // Section 1.
+  &-1 {
+    .section-title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    .text-field {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .text-input {
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 50rem;
+      }
+
+      .message-input {
+        height: 23.5rem;
+      }
+    }
+
+    button[type="submit"] {
+      border-radius: 0.5rem;
+      margin: 1rem 0 2rem 0;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  // Section 2.
+  &-2 {
+    border-bottom: 0.3rem solid $main-color;
+    margin: 1rem 0 0 0;
+    padding: 2rem 0;
+
+    .contacts-info {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 2rem;
+      }
     }
   }
 }
