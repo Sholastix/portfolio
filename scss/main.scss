@@ -40,13 +40,13 @@ ul {
   list-style: none;
 }
 
-// Nav Main.
+// NAV MAIN.
 #nav-main {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   padding-top: 2rem;
 
-  // Logo
   #logo {
     border: 0.1rem solid black;
     border-radius: 0.5rem;
@@ -149,10 +149,10 @@ ul {
 
     .about-info {
       display: grid;
-      gap: 5rem;
+      gap: 4rem;
       grid-template-areas:
-        "intro-image intro intro"
-        "award-1 award-2 award-3";
+        'intro-image intro intro'
+        'award-1 award-2 award-3';
 
       // GRID Area.
       .intro-image {
@@ -160,6 +160,7 @@ ul {
       }
 
       .intro {
+        border-left: 0.3rem solid $main-color;
         border-radius: 1rem;
         grid-area: intro;
 
@@ -260,7 +261,7 @@ ul {
       }
 
       p {
-        // border: 0.1rem solid $medium-color;
+        // border: 0.2rem solid $main-color;
         border-radius: 1rem;
         background-color: $medium-color;
         margin: 2rem 0 5rem 0;
@@ -325,7 +326,7 @@ ul {
     .contacts-info {
       align-items: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       padding: 2rem;
 
       p {
@@ -354,7 +355,7 @@ ul {
     .specialization {
       display: grid;
       gap: 1rem;
-      grid-template-columns: repeat(3, 1fr); // shorthand for "grid-template-columns: 1fr 1fr 1fr;"
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 

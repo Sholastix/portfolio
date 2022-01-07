@@ -154,6 +154,7 @@ ul {
 #nav-main {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   padding-top: 2rem; }
   #nav-main #logo {
     border: 0.1rem solid black;
@@ -217,11 +218,12 @@ ul {
 
 #about-1 .about-info {
   display: grid;
-  gap: 5rem;
-  grid-template-areas: "intro-image intro intro" "award-1 award-2 award-3"; }
+  gap: 4rem;
+  grid-template-areas: 'intro-image intro intro' 'award-1 award-2 award-3'; }
   #about-1 .about-info .intro-image {
     grid-area: intro-image; }
   #about-1 .about-info .intro {
+    border-left: 0.3rem solid gold;
     border-radius: 1rem;
     grid-area: intro; }
     #about-1 .about-info .intro p {
@@ -324,7 +326,7 @@ ul {
   #contacts-2 .contacts-info {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 2rem; }
     #contacts-2 .contacts-info p {
       font-size: 2rem;
@@ -439,25 +441,93 @@ input[class^="btn-"]:hover {
   #header-home {
     height: 60vh; }
     #header-home .header-content #photo {
+      border: 0.8rem ridge #dddddd;
       filter: grayscale(0);
       height: 20rem;
       width: 20rem; }
     #header-home .header-content h1 {
       font-size: 3rem;
       padding-top: 2rem; }
-    #header-home .header-content p {
-      font-size: 1.5rem; }
-    #header-home .header-content a {
-      margin: 2rem; }
   #projects-1 .samples {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr); }
   #contacts-1 button[type="submit"] {
-    margin: 3rem 0 3rem 0; }
+    margin: 3rem 0; }
   #contacts-2 .contacts-info {
     margin-bottom: 10.5rem;
     padding: 2rem; } }
 
 @media (max-width: 500px) {
+  #nav-main #logo {
+    height: 4rem;
+    width: 4rem; }
   #nav-main li {
-    padding: 1rem 0.5rem 1rem 1rem; } }
+    padding: 1rem 0.5rem; }
+  #header-home .header-content #photo {
+    border: 0.5rem ridge #dddddd;
+    height: 15rem;
+    width: 15rem; }
+  #header-home .header-content h1 {
+    font-size: 2.5rem; }
+  #header-home .header-content p {
+    font-size: 1.5rem; }
+  #home-1 p {
+    padding-bottom: 2rem; }
+  #home-1 .specialization {
+    display: flex;
+    flex-direction: column; }
+    #home-1 .specialization p {
+      padding-bottom: 2rem; }
+  #home-3 p {
+    padding-bottom: 2rem; }
+  #home-3 .workflow {
+    display: flex;
+    flex-direction: column; }
+    #home-3 .workflow p {
+      padding-bottom: 2rem; }
+  #about-1 .about-info {
+    gap: 2rem;
+    grid-template-areas: "intro-image" "intro" "award-1" "award-2" "award-3"; }
+    #about-1 .about-info img {
+      padding-bottom: 1rem; }
+    #about-1 .about-info .intro {
+      border-left: 0.3rem solid gold; }
+    #about-1 .about-info .award-1 p,
+    #about-1 .about-info .award-2 p,
+    #about-1 .about-info .award-3 p {
+      padding-bottom: 1rem; }
+  #about-3 .about-logos img {
+    height: 7rem;
+    width: 7rem;
+    padding: 0.5rem; }
+  #about-4 .testimonials {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr); }
+    #about-4 .testimonials p {
+      margin: 1rem 0 2rem 0;
+      padding: 1rem;
+      text-align: left; }
+  #projects-1 .samples {
+    margin: 3rem 0 11.6rem; }
+    #projects-1 .samples .sample-text-wrapper {
+      position: absolute;
+      top: 20%;
+      width: 100%; }
+    #projects-1 .samples .sample-text-category {
+      font-size: 1.5rem; }
+    #projects-1 .samples .sample-text-title {
+      font-size: 2rem; }
+  #contacts-1 .text-field .text-input {
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 32rem; }
+  #contacts-1 .text-field .message-input {
+    height: 15rem; }
+  #contacts-2 .contacts-info {
+    display: flex;
+    flex-direction: column; }
+    #contacts-2 .contacts-info p {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-bottom: 3rem; } }
