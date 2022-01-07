@@ -151,16 +151,15 @@ img {
 ul {
   list-style: none; }
 
-#logo {
-  border: 0.1rem solid black;
-  border-radius: 0.5rem;
-  height: 5rem;
-  width: 5rem; }
-
 #nav-main {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem; }
+  #nav-main #logo {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    height: 5rem;
+    width: 5rem; }
   #nav-main ul {
     display: flex; }
   #nav-main li {
@@ -177,7 +176,7 @@ ul {
       border-color: gold; }
 
 #header-home {
-  background: url("../img/bg_image_6.jpg") no-repeat center right/cover;
+  background: url("../img/bg_image.jpg") no-repeat center right/cover;
   height: 100vh;
   color: white; }
   #header-home .header-content {
@@ -187,7 +186,7 @@ ul {
       border-radius: 50%;
       filter: grayscale(1);
       height: 30rem;
-      transition-duration: 10s;
+      transition-duration: 5s;
       transition-property: filter;
       width: 30rem; }
     #header-home .header-content #photo:hover {
@@ -204,7 +203,7 @@ ul {
       margin: 4rem; }
 
 #header-inner {
-  background: url("../img/bg_image_6.jpg") no-repeat center right/cover;
+  background: url("../img/bg_image.jpg") no-repeat center right/cover;
   height: 9rem;
   color: white; }
 
@@ -262,9 +261,8 @@ ul {
   display: flex;
   justify-content: center; }
   #about-3 .about-logos img {
-    height: 20rem;
-    width: 20rem;
     margin-bottom: 3rem;
+    max-width: 20rem;
     padding: 2rem; }
 
 #about-4 .section-title {
@@ -308,11 +306,11 @@ ul {
     padding: 0.5rem;
     width: 50rem; }
   #contacts-1 .text-field .message-input {
-    height: 23.5rem; }
+    height: 18.8rem; }
 
 #contacts-1 button[type="submit"] {
   border-radius: 0.5rem;
-  margin: 1rem 0 2rem 0; }
+  margin: 3rem 0 1rem 0; }
   #contacts-1 button[type="submit"]:hover {
     color: black; }
 
@@ -321,13 +319,13 @@ ul {
   padding-bottom: 3rem; }
 
 #contacts-2 {
-  border-bottom: 0.3rem solid gold;
   margin: 1rem 0 0 0;
   padding: 2rem 0; }
   #contacts-2 .contacts-info {
     align-items: center;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 2rem; }
     #contacts-2 .contacts-info p {
       font-size: 2rem;
       font-weight: bold;
@@ -436,3 +434,30 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: gold; }
+
+@media (max-width: 850px) {
+  #header-home {
+    height: 60vh; }
+    #header-home .header-content #photo {
+      filter: grayscale(0);
+      height: 20rem;
+      width: 20rem; }
+    #header-home .header-content h1 {
+      font-size: 3rem;
+      padding-top: 2rem; }
+    #header-home .header-content p {
+      font-size: 1.5rem; }
+    #header-home .header-content a {
+      margin: 2rem; }
+  #projects-1 .samples {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); }
+  #contacts-1 button[type="submit"] {
+    margin: 3rem 0 3rem 0; }
+  #contacts-2 .contacts-info {
+    margin-bottom: 10.5rem;
+    padding: 2rem; } }
+
+@media (max-width: 500px) {
+  #nav-main li {
+    padding: 1rem 0.5rem 1rem 1rem; } }

@@ -1,0 +1,88 @@
+// Tablets.
+@media (max-width: 850px) {
+  // 'HOME' page.
+  #header {
+    &-home {
+      height: 60vh;
+
+      .header-content {
+        #photo {
+          filter: grayscale(0);
+          height: 20rem;
+          width: 20rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+          padding-top: 2rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        a {
+          margin: 2rem;
+        }
+      }
+    }
+  }
+
+  // 'PROJECTS' page.
+  #projects {
+    // Section 1.
+    &-1 {
+      .samples {
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  // 'CONTACTS' page.
+  #contacts {
+    // Section 1.
+    &-1 {
+      button[type="submit"] {
+        margin: 3rem 0 3rem 0;
+      }
+    }
+
+    // Section 2.
+    &-2 {
+      .contacts-info {
+        margin-bottom: 10.5rem;
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+// Smartphones.
+@media (max-width: 500px) {
+  // 'HOME' page.
+  #nav-main {
+    #logo {
+
+    }
+
+    li {
+      padding: 1rem 0.5rem 1rem 1rem;
+    }
+  }
+
+  // // 'ABOUT' page.
+  // #about {
+  //   // Section 3.
+  //   &-3 {
+  //     .about-logos {
+  //       img {
+  //         height: 15rem;
+  //         width: 15rem;
+  //         margin-bottom: 1.5rem;
+  //         padding: 2rem;
+  //       }
+  //     }
+  //   }
+  // }
+}
