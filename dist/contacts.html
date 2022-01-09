@@ -36,12 +36,13 @@
       <h2 class="section-title">Contact Information</h2>
       <div class="dividing-line"></div>
       <p>Feel free to contact me anytime!</p>
-      <form>
+      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="text-field">
-          <input type="text" class="text-input name-input" placeholder="Name:">
-          <input type="email" class="text-input email-input" placeholder="E-Mail Adress:">
-          <input type="text" class="text-input subject-input" placeholder="Subject:">
-          <textarea class="text-input message-input" placeholder="Enter your message:"></textarea>
+          <input type="text" class="text-input name-input" name="name" placeholder="Name:">
+          <input type="email" class="text-input email-input" name="email" placeholder="E-Mail Adress:">
+          <input type="text" class="text-input subject-input" name="subject" placeholder="Subject:">
+          <textarea class="text-input message-input" name="message" placeholder="Enter your message:"></textarea>
+          <div data-netlify-recaptcha="true"></div>
         </div>
         <button type="submit" class="btn-medium">Submit</button>
       </form>
