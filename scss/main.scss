@@ -1,7 +1,7 @@
 // Importing partials.
-@import 'config';
-@import 'sample-grid';
-@import 'utilities';
+@import "config";
+@import "sample-grid";
+@import "utilities";
 
 // General styles.
 * {
@@ -96,6 +96,7 @@ ul {
       #photo {
         border: 1.2rem ridge $light-color;
         border-radius: 50%;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
         filter: grayscale(1);
         height: 30rem;
         transition-duration: 5s;
@@ -120,6 +121,7 @@ ul {
 
       a {
         border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         margin: 4rem;
       }
     }
@@ -151,18 +153,25 @@ ul {
       display: grid;
       gap: 4rem;
       grid-template-areas:
-        'intro-image intro intro'
-        'award-1 award-2 award-3';
+        "intro-image intro intro"
+        "award-1 award-2 award-3";
+
+      margin-bottom: 2rem;
 
       // GRID Area.
       .intro-image {
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         grid-area: intro-image;
+        margin-bottom: 2rem;
       }
 
       .intro {
         border-left: 0.3rem solid $main-color;
         border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         grid-area: intro;
+        margin-bottom: 2rem;  
 
         p {
           padding: 0 3rem 1rem;
@@ -170,15 +179,30 @@ ul {
       }
 
       .award-1 {
+        background-color: white;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         grid-area: award-1;
+        padding: 3rem 1rem 0;
       }
 
       .award-2 {
+        background-color: white;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         grid-area: award-2;
+        padding: 3rem 1rem 0;
       }
 
       .award-3 {
+        background-color: white;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         grid-area: award-3;
+        padding: 3rem 1rem 0;
       }
 
       h3 {
@@ -191,6 +215,7 @@ ul {
   // Section 2.
   &-2 {
     border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     color: white;
     margin: 5rem 3rem;
     padding-bottom: 2rem;
@@ -229,9 +254,13 @@ ul {
       justify-content: center;
 
       img {
+        border: 0.1rem solid black;
+        border-radius: 10%;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         margin-bottom: 3rem;
         max-width: 20rem;
         padding: 2rem;
+        margin: 0.2rem;
       }
     }
   }
@@ -261,9 +290,10 @@ ul {
       }
 
       p {
-        // border: 0.2rem solid $main-color;
+        border-left: 0.2rem solid $main-color;
         border-radius: 1rem;
         background-color: $medium-color;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         margin: 2rem 0 5rem 0;
         padding: 1rem;
         text-align: left;
@@ -293,6 +323,7 @@ ul {
       justify-content: center;
 
       .text-input {
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         margin: 1rem;
         padding: 0.5rem;
         width: 50rem;
@@ -305,7 +336,8 @@ ul {
 
     button[type="submit"] {
       border-radius: 0.5rem;
-      margin: 3rem 0 1rem 0;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+      margin: 2rem 0 1rem 0;
 
       &:hover {
         color: black;
@@ -320,13 +352,15 @@ ul {
 
   // Section 2.
   &-2 {
-    margin: 1rem 0 0 0;
     padding: 2rem 0;
 
     .contacts-info {
       align-items: center;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
       display: flex;
       justify-content: space-evenly;
+      margin-bottom: 2rem;
       padding: 2rem;
 
       p {
@@ -354,8 +388,16 @@ ul {
 
     .specialization {
       display: grid;
-      gap: 1rem;
+      gap: 5rem;
       grid-template-columns: repeat(3, 1fr);
+
+      p {
+        border-left: 0.3rem solid $main-color;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        padding: 2rem;
+      }
     }
   }
 
@@ -366,19 +408,9 @@ ul {
       grid-template-columns: repeat(4, 1fr);
       margin: 0 3rem;
 
-      li {
-        &.stats-title {
-          font-size: 2rem;
-          padding-bottom: 1.5rem;
-        }
-
-        &.stats-number {
-          font-size: 3rem;
-          font-weight: bold;
-        }
-      }
-
       div {
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
         padding: 5rem 0;
 
         &:nth-child(odd) {
@@ -386,7 +418,20 @@ ul {
         }
 
         &:nth-child(even) {
-          background-color: $medium-color;
+          background-color: black;
+          color: white;
+        }
+
+        li {
+          &.stats-title {
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+          }
+
+          &.stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -406,7 +451,7 @@ ul {
 
     .workflow {
       display: grid;
-      gap: 1rem;
+      gap: 5rem;
       grid-template-columns: repeat(3, 1fr);
 
       // workflow-icon
@@ -451,11 +496,15 @@ ul {
       }
 
       h3 {
-        padding-top: 1rem;
+        padding: 1rem 0;
       }
 
       p {
-        padding-top: 2rem;
+        border-left: 0.3rem solid $main-color;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        padding: 2rem;
       }
     }
   }
@@ -508,4 +557,4 @@ input[class^="btn-"]:hover {
 }
 
 // Import Media Queries.
-@import 'media';
+@import "media";

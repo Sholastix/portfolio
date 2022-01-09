@@ -1,4 +1,4 @@
-// TABLETS.
+// 1. TABLETS.
 @media (max-width: 850px) {
   // 'HOME' page.
   #header {
@@ -51,7 +51,7 @@
   }
 }
 
-// SMARTPHONES.
+// 2. SMARTPHONES.
 @media (max-width: 500px) {
   // 'HOME' page.
   #nav-main {
@@ -86,21 +86,20 @@
   }
 
   #home {
+    // Section 1.
     &-1 {
-      p {
-        padding-bottom: 2rem;
-      }
-
       .specialization {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
 
         p {
-          padding-bottom: 2rem;
+          margin-bottom: 2rem;
         }
       }
     }
 
+    // Section 3.
     &-3 {
       p {
         padding-bottom: 2rem;
@@ -109,9 +108,10 @@
       .workflow {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
 
         p {
-          padding-bottom: 2rem;
+          margin-bottom: 2rem;
         }
       }
     }

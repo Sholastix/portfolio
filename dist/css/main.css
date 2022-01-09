@@ -7,7 +7,7 @@
 
 .sample {
   background-color: gold;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative; }
   .sample::after {
@@ -185,6 +185,7 @@ ul {
     #header-home .header-content #photo {
       border: 1.2rem ridge #dddddd;
       border-radius: 50%;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
       filter: grayscale(1);
       height: 30rem;
       transition-duration: 5s;
@@ -201,6 +202,7 @@ ul {
       padding-top: 2rem; }
     #header-home .header-content a {
       border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
       margin: 4rem; }
 
 #header-inner {
@@ -219,27 +221,49 @@ ul {
 #about-1 .about-info {
   display: grid;
   gap: 4rem;
-  grid-template-areas: 'intro-image intro intro' 'award-1 award-2 award-3'; }
+  grid-template-areas: "intro-image intro intro" "award-1 award-2 award-3";
+  margin-bottom: 2rem; }
   #about-1 .about-info .intro-image {
-    grid-area: intro-image; }
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    grid-area: intro-image;
+    margin-bottom: 2rem; }
   #about-1 .about-info .intro {
     border-left: 0.3rem solid gold;
     border-radius: 1rem;
-    grid-area: intro; }
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    grid-area: intro;
+    margin-bottom: 2rem; }
     #about-1 .about-info .intro p {
       padding: 0 3rem 1rem; }
   #about-1 .about-info .award-1 {
-    grid-area: award-1; }
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    grid-area: award-1;
+    padding: 3rem 1rem 0; }
   #about-1 .about-info .award-2 {
-    grid-area: award-2; }
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    grid-area: award-2;
+    padding: 3rem 1rem 0; }
   #about-1 .about-info .award-3 {
-    grid-area: award-3; }
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    grid-area: award-3;
+    padding: 3rem 1rem 0; }
   #about-1 .about-info h3 {
     padding-top: 1rem;
     padding-bottom: 2rem; }
 
 #about-2 {
   border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   color: white;
   margin: 5rem 3rem;
   padding-bottom: 2rem; }
@@ -263,9 +287,13 @@ ul {
   display: flex;
   justify-content: center; }
   #about-3 .about-logos img {
+    border: 0.1rem solid black;
+    border-radius: 10%;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 3rem;
     max-width: 20rem;
-    padding: 2rem; }
+    padding: 2rem;
+    margin: 0.2rem; }
 
 #about-4 .section-title {
   padding-top: 2rem;
@@ -284,8 +312,10 @@ ul {
       margin-right: 1rem;
       width: 7rem; }
   #about-4 .testimonials p {
+    border-left: 0.2rem solid gold;
     border-radius: 1rem;
     background-color: #bebebe;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     margin: 2rem 0 5rem 0;
     padding: 1rem;
     text-align: left; }
@@ -304,6 +334,7 @@ ul {
   flex-direction: column;
   justify-content: center; }
   #contacts-1 .text-field .text-input {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     margin: 1rem;
     padding: 0.5rem;
     width: 50rem; }
@@ -312,7 +343,8 @@ ul {
 
 #contacts-1 button[type="submit"] {
   border-radius: 0.5rem;
-  margin: 3rem 0 1rem 0; }
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  margin: 2rem 0 1rem 0; }
   #contacts-1 button[type="submit"]:hover {
     color: black; }
 
@@ -321,12 +353,14 @@ ul {
   padding-bottom: 3rem; }
 
 #contacts-2 {
-  margin: 1rem 0 0 0;
   padding: 2rem 0; }
   #contacts-2 .contacts-info {
     align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
     padding: 2rem; }
     #contacts-2 .contacts-info p {
       font-size: 2rem;
@@ -343,25 +377,34 @@ ul {
 
 #home-1 .specialization {
   display: grid;
-  gap: 1rem;
+  gap: 5rem;
   grid-template-columns: repeat(3, 1fr); }
+  #home-1 .specialization p {
+    border-left: 0.3rem solid gold;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 5rem;
+    padding: 2rem; }
 
 #home-2 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 3rem; }
-  #home-2 .stats li.stats-title {
-    font-size: 2rem;
-    padding-bottom: 1.5rem; }
-  #home-2 .stats li.stats-number {
-    font-size: 3rem;
-    font-weight: bold; }
   #home-2 .stats div {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     padding: 5rem 0; }
     #home-2 .stats div:nth-child(odd) {
       background-color: white; }
     #home-2 .stats div:nth-child(even) {
-      background-color: #bebebe; }
+      background-color: black;
+      color: white; }
+    #home-2 .stats div li.stats-title {
+      font-size: 2rem;
+      padding-bottom: 1.5rem; }
+    #home-2 .stats div li.stats-number {
+      font-size: 3rem;
+      font-weight: bold; }
 
 #home-3 .section-title {
   padding-top: 3rem;
@@ -373,7 +416,7 @@ ul {
 
 #home-3 .workflow {
   display: grid;
-  gap: 1rem;
+  gap: 5rem;
   grid-template-columns: repeat(3, 1fr); }
   #home-3 .workflow-icon {
     background-color: black;
@@ -407,9 +450,13 @@ ul {
     transition: all 1s;
     width: 4rem; }
   #home-3 .workflow h3 {
-    padding-top: 1rem; }
+    padding: 1rem 0; }
   #home-3 .workflow p {
-    padding-top: 2rem; }
+    border-left: 0.3rem solid gold;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 5rem;
+    padding: 2rem; }
 
 #projects-1 .section-title {
   padding-top: 3rem;
@@ -471,20 +518,20 @@ input[class^="btn-"]:hover {
     font-size: 2.5rem; }
   #header-home .header-content p {
     font-size: 1.5rem; }
-  #home-1 p {
-    padding-bottom: 2rem; }
   #home-1 .specialization {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 2rem; }
     #home-1 .specialization p {
-      padding-bottom: 2rem; }
+      margin-bottom: 2rem; }
   #home-3 p {
     padding-bottom: 2rem; }
   #home-3 .workflow {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 2rem; }
     #home-3 .workflow p {
-      padding-bottom: 2rem; }
+      margin-bottom: 2rem; }
   #about-1 .about-info {
     gap: 2rem;
     grid-template-areas: "intro-image" "intro" "award-1" "award-2" "award-3"; }
