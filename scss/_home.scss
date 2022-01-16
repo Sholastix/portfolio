@@ -1,0 +1,136 @@
+#home {
+  // Section 1: Specialization.
+  &-1 {
+    .section-title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .specialization {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      p {
+        border-left: 0.3rem solid $main-color;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        padding: 2rem;
+      }
+    }
+  }
+
+  // Section 2: Stats.
+  &-2 {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 3rem;
+
+      div {
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        padding: 5rem 0;
+
+        &:nth-child(odd) {
+          background-color: white;
+        }
+
+        &:nth-child(even) {
+          background-color: black;
+          color: white;
+        }
+
+        li {
+          &.stats-title {
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+          }
+
+          &.stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  // Section 3: My Workflow.
+  &-3 {
+    .section-title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .workflow {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      // workflow-icon
+      &-icon {
+        background-color: $dark-color;
+        border-radius: 50%;
+        color: white;
+        height: 15rem;
+        line-height: 14.5rem;
+        position: relative;
+        transition: all 1s;
+        width: 15rem;
+
+        &:hover {
+          background-color: $main-color;
+          color: black;
+          height: 17rem;
+          line-height: 16.5rem;
+          width: 17rem;
+
+          .workflow-step {
+            background-color: $dark-color;
+            color: white;
+          }
+        }
+      }
+
+      // workflow-step
+      &-step {
+        background-color: $main-color;
+        border-radius: 50%;
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        height: 4rem;
+        line-height: 3.5rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 1s;
+        width: 4rem;
+      }
+
+      h3 {
+        padding: 1rem 0;
+      }
+
+      p {
+        border-left: 0.3rem solid $main-color;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        padding: 2rem;
+      }
+    }
+  }
+}
