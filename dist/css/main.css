@@ -556,13 +556,13 @@ input[class^="btn-"]:hover {
       text-align: left; }
   #projects-1 .samples {
     margin: 3rem 0 11.6rem; }
-    #projects-1 .samples .sample-text-wrapper {
+    #projects-1 .samples .sample .sample-text-wrapper {
       position: absolute;
       top: 20%;
       width: 100%; }
-    #projects-1 .samples .sample-text-category {
+    #projects-1 .samples .sample .sample-text-category {
       font-size: 1.5rem; }
-    #projects-1 .samples .sample-text-title {
+    #projects-1 .samples .sample .sample-text-title {
       font-size: 2rem; }
   #contacts-1 .text-field .text-input {
     margin: 1rem;

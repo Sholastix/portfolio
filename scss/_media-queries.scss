@@ -183,18 +183,20 @@
         margin: 3rem 0 11.6rem;
 
         .sample {
-          &-text-wrapper {
-            position: absolute;
-            top: 20%;
-            width: 100%;
-          }
+          .sample-text {
+            &-wrapper {
+              position: absolute;
+              top: 20%;
+              width: 100%;
+            }
 
-          &-text-category {
-            font-size: 1.5rem;
-          }
+            &-category {
+              font-size: 1.5rem;
+            }
 
-          &-text-title {
-            font-size: 2rem;
+            &-title {
+              font-size: 2rem;
+            }
           }
         }
       }
